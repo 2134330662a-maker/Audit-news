@@ -1,6 +1,6 @@
 # 审计新闻每日推送工具
 
-每日自动抓取全球与国内审计行业新闻，翻译摘要后推送到飞书 & 钉钉群机器人。
+每日自动抓取国际审计行业新闻，翻译摘要后推送到飞书 & 钉钉群机器人。
 
 ## 快速开始
 
@@ -46,8 +46,7 @@ git push -u origin main
 | 国际 | IFRS Foundation | RSSHub |
 | 国际 | PCAOB | RSSHub |
 | 国际 | CFO.com | RSSHub |
-| 国内 | 中国会计视野（专业媒体） | RSSHub |
-| 国内 | 中国注册会计师协会（社会团体） | RSSHub |
+
 
 > 新闻源可在 `main.py` 的 `NEWS_SOURCES` 列表中按需增删或禁用。
 
