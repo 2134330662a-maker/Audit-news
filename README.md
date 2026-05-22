@@ -33,12 +33,8 @@ git push -u origin main
 | `LLM_API_BASE` | 否 | LLM API 地址（默认 `https://api.openai.com/v1`） |
 | `LLM_MODEL` | 否 | 模型名（默认 `gpt-3.5-turbo`） |
 
-### 3. 触发方式
 
-- **自动**：每天北京时间 08:30（UTC 00:30）自动运行
-- **手动**：在 GitHub Actions 页面点击 **"审计新闻每日推送"** → **Run workflow**
-
-### 4. 新闻源
+### 3. 新闻源
 
 | 类别 | 来源 | 类型 |
 |---|---|---|
@@ -50,7 +46,7 @@ git push -u origin main
 
 > 新闻源可在 `main.py` 的 `NEWS_SOURCES` 列表中按需增删或禁用。
 
-### 5. 本地测试
+### 4. 本地测试
 
 ```bash
 pip install -r requirements.txt
@@ -64,7 +60,7 @@ export DINGTALK_SECRET="your_secret"         # 可选
 python main.py
 ```
 
-### 6. 安全说明
+### 5. 安全说明
 
 - 所有 Webhook 地址和密钥通过 GitHub Secrets 注入，**不硬编码在代码中**
 - 国内新闻源仅限社会团体和专业媒体，**不抓取 .gov.cn 政府网站**
